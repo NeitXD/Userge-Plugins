@@ -130,7 +130,7 @@ async def invite_link(message: Message):
         "header": "Tagall recent 100 members with caption",
         "usage": "{tr}tagall [Text | reply to text Msg]",
     },
-    allow_via_bot=False,
+    allow_via_bot=True,
     allow_private=False,
 )
 async def tagall_(message: Message):
@@ -165,7 +165,7 @@ async def tagall_(message: Message):
         "usage": "{tr}stagall [Text | reply to text Msg]",
     },
     allow_private=False,
-    allow_via_bot=False,
+    allow_via_bot=True,
 )
 async def stagall_(message: Message):
     """tag recent members without spam"""
